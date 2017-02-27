@@ -1,12 +1,11 @@
 <template>
-  <div class="page">
+  <div>
     <chat v-if="isLogin"></chat>
     <login v-else></login>
   </div>
 </template>
 
 <script>
-import Counter from 'components/Counter'
 import Chat from 'components/Chat'
 import Login from 'components/Login'
 
@@ -17,10 +16,8 @@ export default {
     }
   },
   components: {
-    'counter': Counter,
     'chat': Chat,
     'login': Login
   }
-
 }
 </script>
