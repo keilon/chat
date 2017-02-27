@@ -7,7 +7,7 @@ export default {
         if (!username) {return}
 
         this.username = username
-        this.socket = io.connect('http://localhost:3000')
+        this.socket = io.connect('ws://localhost:3000')
         this.socket.emit('login', {username:this.username})
         store.commit('USER_LOGIN')
 
