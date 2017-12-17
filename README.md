@@ -1,5 +1,7 @@
 # chat
 
+### chat demo client
+
 To start:
 
 ```bash
